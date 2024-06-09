@@ -1,29 +1,34 @@
-# Log Even Nums
+# HTML Setup for Mocha Testing
 
-In this activity, you will write code to create a function that prints even numbers from 0 to a given number.
+This HTML document sets up a testing environment using Mocha for JavaScript testing.
 
-## Instructions
+- **Meta Tags**: 
+  - Sets character encoding to UTF-8.
+  - Ensures proper rendering and scaling on mobile devices.
+  - Specifies compatibility with the latest rendering engine for Internet Explorer.
 
-* Open [Unsolved/log-even-nums.js](./Unsolved/log-even-nums.js) in your code editor -- this is the only file you will modify in this activity.
+- **Title**: 
+  - Sets the title of the webpage to "Log Even Nums".
 
-* In this file, you will write code in the body of the `logEvenNums` function to achieve the following:
+- **External Resources**:
+  - Links to the Mocha CSS stylesheet for test result styling.
+  - Includes Mocha and Chai JavaScript libraries for testing functionality.
 
-  * Print all even numbers from `0` up to the given `nums` argument inclusive.
+- **Body Content**:
+  - Contains a div with the ID "mocha" for displaying Mocha test results.
+  - Configures Mocha for Behavior-Driven Development (BDD) using `mocha.setup("bdd")`.
+  - Includes JavaScript files for the main script and test script.
+  - Runs Mocha tests with `mocha.run()` to execute the test suite.
 
-    * For example, given the number `6` as the `num` argument, the following should be printed to the console, one log at a time:
+# JavaScript Function for Logging Even Numbers
 
-      ```bash
-      0
-      2
-      4
-      6
-      ```
+This JavaScript code defines a function `logEvenNums` that logs even numbers up to a specified input number.
 
-* You can check to see if your function works properly by opening [Unsolved/test.html](./Unsolved/test.html) in your web browser.
+- **Function Logic**:
+  - Takes a single parameter `num`.
+  - Iterates through numbers from 0 to `num`.
+  - Checks if each number is even using the modulo operator (`%`).
+  - Logs even numbers to the console using `console.log()`.
 
-  * Functions that pass the tests will be denoted with a green check mark.
-
-  * Functions that fail the tests will be denoted with a red x and an error message.
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+- **Example Usage**:
+  - Calls the `logEvenNums` function with an input of 6 to log even numbers up to 6.
